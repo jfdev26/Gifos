@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <title>GIFOS FABIAN DUARTE</title>
+</head>
+<body id="body">
+    <div class="blueline" id="top_blue"></div>
+    <header id="sticky">
+        <input id="checkbox" type="checkbox">
+        <label for="checkbox"><span></span></label>
+        
+        <div class="logomobile">
+            <a href="./index.html"><div></div></a>
+        </div>
+        <div class="logodesk">
+            <a href="./index.html"><div></div></a>
+        </div>
+
+        <ul id="ul--header">
+            <li><a href="#" id="darkness">MODO NOCTURNO</a></li>
+            <li><a id="gotofav" href="./favoritos.html">FAVORITOS</a></li>
+            <li><a href="./misGifos.html">MIS GIFOS</a></li>
+        </ul>
+        <div class="plusbtn">
+            <a href="./creargifo.html"><div></div> </a>
+        </div>
+    </header>
+    <main id="main">
+        <div id="containertitle">
+            <div class="title">
+                <h1>Inspírate, busca, guarda, y crea los mejores <span>GIFOS</span></h1>
+            </div>
+        </div>
+        <nav id="nav">
+            <img src="../assets/ilustra_header.svg" alt="backgroundImg">
+            <div class="navsphere">
+                <input autocomplete="off" type="text" placeholder="Busca GIFOS y más" id="buscador" >
+                <div>
+                    <img src="../assets/searching/icon-search.svg" alt="searchIcon" id="buscadoranimation">
+                    <img class="hidden" src="../assets/loadingcheck/failed.svg" alt="clearNav" id="closer-input">
+                </div>
+                <div class="nav_container--suggestions hidden"></div>
+            </div>
+        </nav>
+        <div class="trending">
+            <div>
+                <h4>Trending</h4>
+                <div id="container-trending"></div>
+            </div>
+        </div>
+        <h2 id="searchResult"></h2>
+        <div id="gifobuilder" class="hidden">
+            
+        </div>
+        <div class="empty-search hidden">
+            <img src="../assets/searching/icon-busqueda-sin-resultado.svg" alt="">
+            <h3>Intenta con otra búsqueda</h3>
+        </div>
+        <div class="container_btn"> 
+            <div class="btn--favoritos hidden">
+            </div>
+            <div class="btn--index hidden">
+
+            </div>
+            <div class="btn--misgifos hidden">
+
+            </div>
+        </div>
+        <div class="trendinggifos">
+            <div class="galleryfoot">
+                <h3>Trending GIFOS</h3>
+                <p>Mira los últimos GIFOS de nuestra comunidad.</p>
+            </div>
+            <div class="gallery">
+                <div class="arrows" id="left" >
+                </div>
+                    <div id="gifs">
+                        
+                    </div>
+                <div class="arrows" id="right">
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="maximizar hidden" id="popup__section">
+        <div class="maximizar__container">
+        <div class="maximizar__container-close" id="popup__btn--cross"></div>
+        <div class="maximizar__container-image">
+            <img src="NotEmpty" alt="Nyan Cat" id="popup__gif--max">
+        </div>
+        <div class="maximizar__container-data">
+            <div class="text">
+            <h1 id="gif_title">Nazgul</h1>
+            <h2 id="gif_username">Nyan cat (original)</h2>
+            </div>
+            <div class="actions">
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--\add trb special 1 @Cris#6689 -->
+    <footer id="footer">
+        <p>Compartir en:</p>
+        <div class="sharing">
+            <a href="https://www.facebook.com/"><div id="facebook"></div></a>
+            <a href="https://twitter.com/?lang=es"><div id="twitter"></div></a>
+            <a href="https://www.instagram.com/?hl=es-la"><div id="insta"></div></a>
+        </div>
+        <div class="copyright">© GIFOS 2021 All Rights Reserved.</div>
+    </footer>
+    <div class="blueline" id="bottom_blue"></div>
+    <script src="../javascript/index.js" ></script>
+    <script src="../javascript/trending.js"></script>
+</body>
+</html>

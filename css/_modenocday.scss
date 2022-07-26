@@ -1,0 +1,289 @@
+body.dark {
+    background-color: rgb(47, 47, 47);
+    color: white;
+    .nav_container--suggestions{
+        li{
+            &:hover {
+                color: white;
+            }
+        }
+    }
+        #crearGif_text {
+            color: white;
+        }
+        #searchResult {
+            color: white;
+        }
+        #right {
+            background: url("../assets/arrow/right/button-slider-right-md-noct.svg");
+            &:hover {
+                background: url("../assets/arrow/right/Button-Slider-right-hover.svg");
+            }
+        }
+        #left {
+            background: url("../assets/arrow/left/button-slider-left-md-noct.svg");
+            &:hover {
+                background: url("../assets/arrow/left/button-slider-left-hover.svg");
+            }
+        }
+        .btn--index, .btn--favoritos, .btn--misgifos{
+            background: url("../assets/viewmorebtn/ver-mas-noc.svg");
+            width: 127px;
+            height: 50px;
+            &:hover{
+                background: url("../assets/viewmorebtn/ver-mas-hover-noc.svg");
+            }
+        }
+        #gifobuilder, #misFavor, #edifMisGifs{
+            >.placeholder {
+                box-shadow: rgba(255, 255, 255, 0.877) 2px 3px 5px;
+            }
+        }
+
+        #stepone {
+            background: url("../assets/paso-a-paso/paso-a-paso-mod-noc.svg") no-repeat center;
+        }
+        #steptwo {
+            background: url("../assets/paso-a-paso/paso-a-paso-mod-noc2.svg") no-repeat center;
+        }
+                    #stepthree {
+                        background: url("../assets/paso-a-paso/paso-a-paso-mod-noc3.svg") no-repeat center;
+                    }
+        background-color: rgb(47, 47, 47);
+        color: white;
+        header {
+            .logomobile {
+                >a div {
+                    background: url("../assets/logo/logo-mobile-modo-noct.svg") no-repeat center;
+                }
+            }
+            .logodesk {
+                >a div {
+                    background: url("../assets/logo/Logo-modo-noc.svg") no-repeat center;
+                }
+            }
+            .plusbtn {
+                div {
+                    background: url("../assets/plusbtn/CTA-crear-gifo-modo-noc.svg") no-repeat center;
+                    &:hover {
+                        background: url("../assets/plusbtn/CTA-crear-gifo-hover-modo-noc.svg")
+                    }
+                }
+            }
+            background-color: inherit;
+            ul {
+                background-color: black;
+            }
+            input:checked {
+                ~ label span{
+                background-color: transparent;
+                }
+                ~ label span::before{
+                    background-color: white;
+                }
+                ~ label span::after{
+                    background-color: white;
+                }
+            }
+            label span{
+                background-color: white;
+            }
+        }
+        .trendinggifos {
+            background-color: #222326;
+            color: white;
+        }
+        .gifosimg {
+            color: white;
+        }
+        .emptyscreen {
+            h3 {
+                color: white;
+                font-size: 23px;
+            }
+        }
+        .navsphere {
+            input {
+                color: white;
+            }
+        }
+        h2 {
+            color: white;
+        }
+        .sharing {
+            #facebook{
+                background: url("../assets/facebook/icon_facebook_noc.svg") no-repeat center;
+                &:hover {
+                    background: url("../assets/facebook/icon_facebook_hover.svg") no-repeat center;
+                }
+            }
+            #twitter{
+                background: url("../assets/twitter/icon_twitter_noc.svg") no-repeat center;
+                &:hover {
+                    background: url("../assets/twitter/icon_twitter-hover.svg") no-repeat center;
+                }
+            }
+            #insta {
+                background: url("../assets/insta/icon_instagram_noc.svg") no-repeat center;
+                &:hover {
+                    background: url("../assets/insta/icon_instagram-hover.svg") no-repeat center;
+                }
+            }
+        }
+    }
+
+    header input:checked ~ label span{
+        background-color: transparent;
+    }
+    header input:checked ~ label span::before{
+        transform: rotate(-45deg);
+        background-color: darkblue;
+        top: 0;
+    }
+    header input:checked ~ label span::after{
+        transform: rotate(45deg);
+        background-color: darkblue;
+        top: 0;
+    }
+
+        // Light - Theme.
+
+        // ======================================================================== //
+
+    body.light-theme {
+        #crearGif_text {
+            color: black;
+        }
+        background-color: white;
+        #searchResult {
+            color: $lightpurplecolor;
+        }
+        .btn--index, .btn--favoritos, .btn--misgifos{
+            background-image: url("../assets/viewmorebtn/ver-mas.svg");
+            width: 127px;
+            height: 50px;
+            .btn--index:hover, .btn--favoritos:hover, .btn--misgifos:hover {
+                background-image: url("../assets/viewmorebtn/ver-mas-hover.svg");
+            }
+        }
+        #right {
+            background: url("../assets/arrow/right/Button-Slider-right.svg");
+            &:hover {
+                background: url("../assets/arrow/right/Button-Slider-right-hover.svg");
+            }
+        }
+        #left {
+            background: url("../assets/arrow/left/button-slider-left.svg");
+            &:hover {
+                background: url("../assets/arrow/left/button-slider-left-hover.svg");
+            }
+        }
+        #gifobuilder, #misFavor, #edifMisGifs{
+            >.placeholder {
+                box-shadow: rgba(0, 0, 0, 0.25) 2px 3px 5px;
+            }
+        }
+        #stepone {
+                        background: url("../assets/paso-a-paso/paso-a-paso.svg") no-repeat center;
+        }
+        #steptwo {
+                        background: url("../assets/paso-a-paso/paso-a-paso2.svg") no-repeat center;                    
+        }
+        #stepthree {
+                        background: url("../assets/paso-a-paso/paso-a-paso3.svg") no-repeat center;
+            }
+                
+        header {
+            background-color: inherit;
+            color: white;
+            .logomobile {
+                a {
+                    div {
+                    background: url("../assets/logo/logo-mobile.svg") no-repeat center;
+                    }
+                }
+            }
+            .logodesk {
+                a {
+                    div {
+                    background: url("../assets/logo/logo-mobile.svg") no-repeat center;
+                    }
+                }
+            }
+            ul {
+                background-color: rgba(87,46,229,0.90);
+            }
+            .plusbtn {
+                div {
+                    background: url("../assets/plusbtn/button-crear-gifo.svg") no-repeat center;
+                    &:hover {
+                        background: url("../assets/plusbtn/CTA-crear-gifo-hover.svg")
+                    }
+                }
+            }
+            input:checked {
+                ~ label span{
+                background-color: transparent;
+                }
+                ~ label span::before{
+                    background-color: darkblue;
+                }
+                ~ label span::after{
+                    background-color: darkblue;
+                }
+            }
+            label span{
+                background-color: darkblue;
+            }
+        }
+        .trendinggifos {
+            background-color: #F3F5F8;
+            color: black;
+            width: 100%;
+            p {
+                color: black;
+            }
+        }
+        footer {
+            color: initial;
+            .sharing {
+                #facebook{
+                    background: url("../assets/facebook/icon_facebook.svg") no-repeat center;
+                    &:hover {
+                        background: url("../assets/facebook/icon_facebook_hover.svg") no-repeat center;
+                    }
+                }
+                #twitter{
+                    background: url("../assets/twitter/icon_twitter.svg") no-repeat center;
+                    &:hover {
+                        background: url("../assets/twitter/icon_twitter-hover.svg") no-repeat center;
+                    }
+                }
+                #insta {
+                    background: url("../assets/insta/icon_instagram.svg") no-repeat center;
+                    &:hover {
+                        background: url("../assets/insta/icon_instagram-hover.svg") no-repeat center;
+                    }
+                }
+            }
+        }
+        .gifosimg {
+            color: $lightpurplecolor;
+        }
+        h3 {
+            color: $lightgreencolor;
+            font-size: 23px;
+        }
+        h2 {
+            color: $lightpurplecolor;
+        }
+        p {
+            color: black;
+        }
+        
+        .navsphere {
+            input {
+                color: black;
+            }
+        }
+}

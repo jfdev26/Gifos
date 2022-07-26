@@ -1,0 +1,47 @@
+@import "variables";
+@import "header";
+@import "title";
+@import "nav";
+@import "trending";
+@import "footer";
+@import "creategifs";
+@import "btn";
+@import "favoritos";
+@import "placegiftcrafter";
+@import "modenocday";
+@import "maxpopup";
+@import "misgifos";
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: $font;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+.blueline {
+    width: 100%;
+    height: 5px;
+    background-color: $lightpurplecolor;
+}
+
+.hidden {
+    display: none !important;
+}
+a {
+    cursor: pointer;
+}
+
+.cover_purple {
+    background: rgba(87, 46, 229, 0.7) !important;
+}
+
+@media (max-width: 840px) {
+    .btn-holder, .icon-holder {
+        display: none;
+        img {
+            display: none;
+        }
+    }
+}

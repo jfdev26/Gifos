@@ -1,0 +1,209 @@
+.trending {
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 45px;
+        width: 236px;
+        justify-self: center;
+        align-self: center;
+        p {
+            size: 14px;
+            color: $lightpurplecolor;
+            align-self: center;
+        }
+        h4 {
+            padding-bottom: 5px;
+            size: 19px;
+            color: $lightpurplecolor;
+            align-self: center;
+        }
+    }
+}
+
+.trendinggifos {
+    display: flex;
+    flex-direction: column;
+    background-color: $lightwhite;
+    height: 430px;
+    .galleryfoot {
+        width: 330px;
+        margin-top: 36px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        h3 {
+            align-self: center;
+            color: $lightpurplecolor;
+        }
+        p {
+            align-self: center;
+        }
+    }
+    .gallery {
+        flex-direction: row;
+        align-self: center;
+        width: 90%;
+        height: 180px;
+        margin-bottom: 82px;
+        margin-top: 32px;
+        .arrows {
+            display: none;
+        }
+        #gifs {
+            display: flex;
+            width: 100%;
+            height: auto;
+            overflow-x: scroll;
+            margin: 0px 5%;
+        }
+    }
+}
+
+// ###################### CSS del Overlay, objetivamente debe cambiarse
+
+.item {
+    display: grid;
+    grid-template-columns: 270px;
+    grid-template-rows: 180px;
+    margin: 0px 20px;
+    .trendholder {
+        width: 100%;
+        height: 100%;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        margin: 0px;
+    }
+    img {
+            grid-column-start: 1;
+            grid-row-start: 1;
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+        }
+    
+}
+
+// #################### ID de los Trendings Sugeridos y sus estilos ###############################
+#container-trending {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    span {
+        padding: 5px 10px;
+        width: auto;
+        color: $lightpurplecolor;
+        &::after {
+            content: ',';
+        }
+        &:hover {
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (min-width: 940px) {
+    .item {
+        display: grid;
+        grid-template-columns: 275px;
+        grid-template-rows: 275px;
+        margin: 0px 20px;
+    }
+    .trendholder {
+        width: 100%;
+        height: 275px;
+        display: grid;
+        grid-template-columns: 275px;
+        grid-template-rows: auto;
+        margin: 0px 10px;
+        >.btnholder {
+            grid-column-start: 1;
+            grid-row-start: 1;
+            z-index: 5;
+            display: flex;
+            justify-content: flex-end;
+            background: rgba(87, 46, 229, 0.7);
+            margin: 0px;
+            padding-top: 10px;
+            padding-right: 10px;
+            .iconholder {
+                width: 15%;
+                align-self: flex-start;
+                justify-self: flex-end;
+                margin: 0px 5px;
+                img {
+                    width: 45px;
+                }
+            }
+            h4 {
+                justify-self: flex-end;
+                align-self: flex-end;
+                color: white;
+                padding-bottom: 20px;
+                padding-left: 10px;
+                font-size: 14px;
+            }
+        }
+        img {
+            grid-column-start: 1;
+            grid-row-start: 1;
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: inherit;
+        }
+    }
+    .trending {
+        div {
+            margin-top: 70px;
+            margin-bottom: 95px;
+            width: 100%;
+            justify-self: center;
+            align-self: center;
+            p {
+                width: 100%;
+                size: 14px;
+                color: $lightpurplecolor;
+                align-self: center;
+            }
+            h4 {
+                padding-bottom: 5px;
+                size: 19px;
+                color: $lightpurplecolor;
+                align-self: center;
+            }
+        }
+    }
+    .trendinggifos {
+        height: 640px;
+        .gallery{
+            justify-self: flex-start;
+            align-self: center;
+            width: 100%;
+            height: 275px;
+            margin-bottom: 182px;
+            margin-top: 53px;
+            overflow: hidden;
+            #gifs {
+                display: flex;
+                width: 70%;
+                height: 100%;
+                margin: 0px;
+                overflow: hidden;
+                padding-left: 20rem;
+            }
+            .arrows {
+                font-style: none;
+                background-color: none;
+                width: 40px;
+                height: 40px;
+                align-self: center;
+                display: initial;
+                margin: 5px;
+                margin-top: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.container_btn {
+    margin-top: 78px;
+    margin-bottom: 76px;
+    display: flex;
+    justify-content: center;
+    div {
+        cursor: pointer;
+    }
+}
+
+.button {
+    margin-top: 10px;
+    border: 1px solid $lightpurplecolor;
+    padding: 10px 15px;
+    border-radius: 1rem;
+}
